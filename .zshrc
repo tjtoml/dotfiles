@@ -45,13 +45,13 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git github tugboat safe-paste per-directory-history extract compleat command-not-found colorize colored-man-pages themes)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/usr/local/bin:/usr/bin:/bin:/opt/bin:/usr/x86_64-pc-linux-gnu/gcc-bin/4.9.2"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -78,3 +78,11 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source /usr/share/zsh/site-contrib/powerline.zsh
+export TERMINAL="xfce4-terminal"
+alias shutdown="sudo shutdown -h now"
+alias reboot="sudo shutdown -r now"
+alias :q="exit"
+eval `keychain --eval  --quiet --agents ssh id_rsa`
+export VISUAL=vim
+export EDITOR="$VISUAL"
