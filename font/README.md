@@ -1,2 +1,4 @@
-Credit to https://github.com/supermarin/YosemiteSanFranciscoFont
-Just here for me. 
+Credit to https://github.com/supermarin/YosemiteSanFranciscoFont  
+  
+  
+These are just here for me. 
